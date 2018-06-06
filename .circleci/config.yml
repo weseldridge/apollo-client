@@ -3,7 +3,7 @@ version: 2
 jobs:
   Danger:
     docker:
-      - image: circleci/node:8
+      - image: circleci/node:8@sha256:0dd5b288f9b7e0a94c269dfb9f3c5869b79c2b1d2bb0d66ff62b9072987f13ce
     steps:
       - checkout
       - restore_cache:
@@ -19,7 +19,7 @@ jobs:
 
   Docs:
     docker:
-      - image: circleci/node:8
+      - image: circleci/node:8@sha256:0dd5b288f9b7e0a94c269dfb9f3c5869b79c2b1d2bb0d66ff62b9072987f13ce
     steps:
       - checkout
       - restore_cache:
@@ -35,7 +35,7 @@ jobs:
 
   Filesize:
     docker:
-      - image: circleci/node:8
+      - image: circleci/node:8@sha256:0dd5b288f9b7e0a94c269dfb9f3c5869b79c2b1d2bb0d66ff62b9072987f13ce
     steps:
       - checkout
       - restore_cache:
@@ -51,7 +51,7 @@ jobs:
 
   Typecheck:
     docker:
-      - image: circleci/node:8
+      - image: circleci/node:8@sha256:0dd5b288f9b7e0a94c269dfb9f3c5869b79c2b1d2bb0d66ff62b9072987f13ce
     steps:
       - checkout
       - restore_cache:
@@ -67,8 +67,8 @@ jobs:
 
   Apollo Client:
     docker:
-      - image: circleci/node:8
-      - image: circleci/node:10
+      - image: circleci/node:8@sha256:0dd5b288f9b7e0a94c269dfb9f3c5869b79c2b1d2bb0d66ff62b9072987f13ce
+      - image: circleci/node:10@sha256:8e0b22cde0f0d54a6744519eb7f366b7204911f53a62d00df9a05248de95e8d2
     steps:
       - checkout
       - restore_cache:
@@ -92,8 +92,8 @@ jobs:
 
   Apollo Boost:
     docker:
-      - image: circleci/node:8
-      - image: circleci/node:10
+      - image: circleci/node:8@sha256:0dd5b288f9b7e0a94c269dfb9f3c5869b79c2b1d2bb0d66ff62b9072987f13ce
+      - image: circleci/node:10@sha256:8e0b22cde0f0d54a6744519eb7f366b7204911f53a62d00df9a05248de95e8d2
     steps:
       - checkout
       - restore_cache:
@@ -117,8 +117,8 @@ jobs:
 
   Apollo Cache:
     docker:
-      - image: circleci/node:8
-      - image: circleci/node:10
+      - image: circleci/node:8@sha256:0dd5b288f9b7e0a94c269dfb9f3c5869b79c2b1d2bb0d66ff62b9072987f13ce
+      - image: circleci/node:10@sha256:8e0b22cde0f0d54a6744519eb7f366b7204911f53a62d00df9a05248de95e8d2
     steps:
       - checkout
       - restore_cache:
@@ -142,8 +142,8 @@ jobs:
 
   Apollo InMemory Cache:
     docker:
-      - image: circleci/node:8
-      - image: circleci/node:10
+      - image: circleci/node:8@sha256:0dd5b288f9b7e0a94c269dfb9f3c5869b79c2b1d2bb0d66ff62b9072987f13ce
+      - image: circleci/node:10@sha256:8e0b22cde0f0d54a6744519eb7f366b7204911f53a62d00df9a05248de95e8d2
     steps:
       - checkout
       - restore_cache:
@@ -167,8 +167,8 @@ jobs:
 
   Apollo Utilities:
     docker:
-      - image: circleci/node:8
-      - image: circleci/node:10
+      - image: circleci/node:8@sha256:0dd5b288f9b7e0a94c269dfb9f3c5869b79c2b1d2bb0d66ff62b9072987f13ce
+      - image: circleci/node:10@sha256:8e0b22cde0f0d54a6744519eb7f366b7204911f53a62d00df9a05248de95e8d2
     steps:
       - checkout
       - restore_cache:
@@ -192,8 +192,8 @@ jobs:
 
   GraphQL Anywhere:
     docker:
-      - image: circleci/node:8
-      - image: circleci/node:10
+      - image: circleci/node:8@sha256:0dd5b288f9b7e0a94c269dfb9f3c5869b79c2b1d2bb0d66ff62b9072987f13ce
+      - image: circleci/node:10@sha256:8e0b22cde0f0d54a6744519eb7f366b7204911f53a62d00df9a05248de95e8d2
     steps:
       - checkout
       - restore_cache:
