@@ -27,9 +27,9 @@ Connect to the Apollo server with [`meteorClientConfig`](#meteorClientConfig):
 
 ```js
 import ApolloClient from 'apollo-client';
-import { meteorClientConfig } from 'meteor/apollo';
+import { createApolloClient } from 'meteor/apollo';
 
-const client = new ApolloClient(meteorClientConfig());
+const client = new ApolloClient(createApolloClient());
 ```
 
 ### Server
